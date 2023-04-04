@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Final Project</title>
+        
+        <style>
+
+            #header {
+                text-align: center;
+                
+            }
+            #heading {
+                position: absolute;
+                top: 160px;;
+                left: 0px;
+                right: 0px;
+                bottom: 0px;
+                font-family:"Times New Roman", Times, serif;
+                color: white;
+
+            }
+            #contact{
+                margin-top: 100px;
+                text-align: center;
+                font-size: 30px;
+                background-image: url(img/backgroundimg.jpeg);
+                height: 350px;
+                padding-top: 100px;  
+                right: 0;
+                left: 0;
+            }
+            /* #resume {
+                margin-left: 40px;
+  
+            } */
+            #above-title{
+                font-size: 40px;
+            }
+            #title {
+                font-size: 80px;
+            }
+            .logo{
+                width: 200px;
+                height: 200px;
+                object-fit:cover;
+                overflow:hidden;
+            }
+
+
+            
+            
+            
+        </style>
+    </head>
+
+    <body>
+        <div id = "full" >
+                <div id = "header" style="font-family:Times New Roman, Times, serif;">
+                <div>
+                    <img src ="img/b-img.jpg" 
+                    style = "width: auto;
+                    height: 600px;
+                    width: 100%;
+                    object-fit:cover;
+                    overflow:hidden;"
+                    alt = "front-image">  
+                </div>
+                <div id = "heading" >
+                    <p id = "above-title">Hey, I'm</p>
+                    <h1 id = "title"> — Nathan Lee — </h1>
+                </div>
+
+                <ul id="navbar">
+                    <li><a href="final.html"><i class="fa fa-fw fa-home"></i></a>
+                    
+                        <!-- <ul>
+                            
+                            <li><a href="projects.html">Projects</a></li>
+        
+                        </ul> -->
+                    </li>
+                    <li><a href="experience.html"><i class="fa fa-fw fa-bars"></i>Experience</a>
+                        <ul>
+                            <li><a href="projects.html">Projects</a></li>
+                        </ul>
+        
+                    </li>
+        
+                    <li><a href="passions.html"><i class="fa fa-fw fa-bars"></i>Passions</a>
+                        <ul>
+                            <li><a href="workoutpage.php">Workout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                
+            </div>
+            
+            <div id = "main" style="font-family:Times New Roman, Times, serif;">
+                <h2 class = "title"> — My Experience — </h2>
+                <div class = "row" id = "journey-summary" style="text-align:left; ">
+
+
+                    <div class= "row section" >
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/usc-logo.png" class = "journey-image" alt = "USC-logo">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>University of Southern California</h3>
+                            <h4 class="association"> B.S in Computer Science and Business Administration</h4>
+                            <h5 class="association">Expected Gradutaion Date: May 2025</h5>
+                            <h5>Los Angeles, CA</h5>
+                            <div class = "more-info">
+                                <p><a href = "https://www.usc.edu/"> <i class="fa fa-fw fa-arrow-right"></i>Click to go to USC website <i class="fa fa-fw fa-arrow-left"></i></a></p>
+                                <div class = "caption">
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/kasa_logo.jpeg" alt="kasa_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Korean American Student Association</h3>
+                            <h4 class="association">Philanthropy Intern</h4>
+                            <h5 class="association">September 2022 - Current</h5>
+                            <h5>Los Angeles, CA</h5>
+                            <div class = "more-info">
+                                <p><a href = "experience.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/kbso_logo.jpeg" alt="kbso_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Korean Business Student Organization</h3>
+                            <h4 class="association">Finance Executive Member</h4>
+                            <h5 class="association">Janurary 2022 - Current</h5>
+                            <h5>Los Angeles, CA</h5>
+                            <div class = "more-info">
+                                <p><a href = "experience.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/usc_its_logo.jpeg" alt="its_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Information Technology Services</h3>
+                            <h4 class="association">Information Technology Analyst</h4>
+                            <h5 class="association">September 2021 - Current</h5>
+                            <h5>Los Angeles, CA</h5>
+                            <div class = "more-info">
+                                <p><a href = "experience.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/chipotle-logo.jpeg" alt="chipotle_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Chipotle</h3>
+                            <h4 class="association">Food Line Worker</h4>
+                            <h5 class="association">July 2018 - July 2021</h5>
+                            <h5>Torrance, CA</h5>
+                            <div class = "more-info">
+                                <p><a href = "experience.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/st.francis.jpeg" alt="st.francis" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>SFKCC</h3>
+                            <h4 class="association">Korean Language Teacher</h4>
+                            <h5 class="association">September 2017 - September 2020</h5>
+                            <h5>Gardena, CA</h5>
+                            <div class = "more-info">
+                                <p><a href = "experience.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div> <!-- End ofjourney summary -->
+
+                <h2 class="title"> — Projects —</h2>
+
+                
+
+                <div id = "project-summary" style="text-align:left;" class = "row break">
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/personalweb_logo.png" alt="personalweb_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Personal Website</h3>
+                            <h4 class="association">Frameworks: HTML, CSS, Javascript, PHP, SQL</h4>
+                            <h5 class="association">November 2022 - December 2022</h5>
+                            <h5>Developed a personal website that you are looking at</h5>
+                            <div class = "more-info">
+                                <a href = "files/Project_Summary.pdf"><i class="fa fa-fw fa-bars"></i> Click for Project Summary</a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/avltree_logo.png" alt="avltree_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>AVL Tree</h3>
+                            <h4 class="association">Frameworks: C++</h4>
+                            <h5 class="association">November 2022</h5>
+                            <h5>Developed a personal AVL and BST class</h5>
+                            <div class = "more-info">
+                                <p><a href = "projects.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/moviedb_logo.jpeg" alt="moviedb_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Movie Search</h3>
+                            <h4 class="association">Frameworks: Javascript, HTML, CSS</h4>
+                            <h5 class="association">November 2022</h5>
+                            <h5>Developed a program meant to return all movies based on a searched value</h5>
+                            <div class = "more-info">
+                                <p><a href = "projects.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/amazon_logo.png" alt="amazon_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Amazon</h3>
+                            <h4 class="association">Framework: C++</h4>
+                            <h5 class="association">September 2022</h5>
+                            <h5>Developed a program meant to replicate Amazon</h5>
+                            <div class = "more-info">
+                                <p><a href = "projects.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/coinfilter.jpeg" alt="coinfilter" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Coin Image Filter</h3>
+                            <h4 class="association">Frameworks: C++</h4>
+                            <h5 class="association">March 2022</h5>
+                            <h5>Developed a program meant to filter the colors of a coin into a variety of different colors</h5>
+                            <div class = "more-info">
+                                <p><a href = "projects.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/maze_logo.webp" alt="maze_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Maze Solver</h3>
+                            <h4 class="association">Frameworks: C++</h4>
+                            <h5 class="association">March 2022</h5>
+                            <h5>Developed a program meant to solve a given maze</h5>
+                            <div class = "more-info">
+                                <p><a href = "projects.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class ="row section">
+                        <div class = "col-2"></div>
+                        <div class = "col-3">
+                            <img src ="img/blackjack_logo.png" alt="blackjack_logo" class = "journey-image">
+                        </div>
+                        <div class = "col-5 information">
+                            <h3>Blackjack</h3>
+                            <h4 class="association">Frameworks: C++</h4>
+                            <h5 class="association">February 2022</h5>
+                            <h5>Developed a program meant to replicate a functionaing game of Blackjack</h5>
+                            <div class = "more-info">
+                                <p><a href = "projects.html"><i class="fa fa-fw fa-bars"></i> Click for more Infomation</a></p>
+                                <div class = "caption">
+                                    
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    
+
+                </div><!-- End of project summary -->            
+
+            </div> <!-- end of main -->
+
+            <div id = "contact" style = "font-family:DejaVu Sans Mono, monospace;">
+                <div id = "resume">
+                    <p>Here is my <a href="files/Software_Resume(7).pdf">personal Resume</a>,</p>
+                    <p>and if you are still curious about me,</p> 
+                    <p> then contact me through my <a href="mailto:nathanlee42003@gmail.com">email</a>!</p> 
+                </div>
+                
+            </div>
+
+            <div id = "footer" style = "font-family:DejaVu Sans Mono, monospace;">
+                
+                <p>I am an ampiverted asian kid that can be bribed with food!</p>
+                <p>If you are not an email person,</p>
+                <p>you can reach out to me on <a href="https://www.linkedin.com/in/nathan-lee-22a6b3241/">linkedin</a>,</p> 
+                <p>on my instagram <a href="https://www.instagram.com/nathan.o.lee/">@nathan.o.lee</a>,</p>
+                <p>or on my <a href="https://www.facebook.com/profile.php?id=100022184750292">facebook</a>!</p>
+                <div class = "row">
+                    <div class="col-3"></div>
+                    <div class="col-2">
+                        <a href="https://www.instagram.com/nathan.o.lee/"><img src="img/insta_logo.webp" alt="insta_logo" class ="logo"></a>
+                    </div>
+                    <div class ="col-2">
+                        <a href="https://www.linkedin.com/in/nathan-lee-22a6b3241/"><img src="img/linkedin-logo.jpeg" alt="linkedin_logo" class ="logo"></a>
+                    </div>
+                    <div class ="col-2">
+                        <a href="https://www.facebook.com/profile.php?id=100022184750292"><img src="img/facebook_logo.webp" alt="facebook_logo" class ="logo"></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+
+
+    </body>
+</html>

@@ -1,0 +1,85 @@
+#navbar{
+    display: flex;
+    align-items:flex-start;
+    justify-content:center;
+    background-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1;
+}
+#navbar li{
+
+    width: 100px;
+    text-align: center;
+    position: relative;
+}
+#navbar a{
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+#navbar li:hover{
+    background-color: red;
+}
+#navbar ul{
+    position:absolute;
+    display: none;
+    top:50px;
+    background-color: black;
+    text-decoration: none;
+}
+#navbar, #navbar ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+#navbar li:hover > ul{
+    display: block;
+}
+#main {
+    text-align:center;
+    background-color:white;
+    margin-top: 100px;
+}
+#footer {
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.association{
+    color: darkgreen;
+    font-style: italic;
+}
+.journey-image{
+    width: 350px;
+    height: 250px;
+    object-fit:cover;
+    overflow:hidden;
+}
+.section {
+    padding-top: 40px;
+}
+.title {
+    font-size: 50px;
+    margin-top:100px;
+    
+}
+.information{
+    margin-left: 40px;
+}
+.session {
+    color: black;
+    font-size: 30px;
+
+    
+}
+
+
+
+
