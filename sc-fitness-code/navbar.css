@@ -1,5 +1,6 @@
 #navbar{
     display: flex;
+    justify-content: center;
     align-items:flex-start;
     background-color: #04c35c;
     position: fixed;
@@ -8,11 +9,12 @@
     right: 0px;
     z-index: 1;
 }
-#right{
-    right: 0px;
+
+#middle {
+    text-align: center;
+    padding-top: 11px;
 }
 #navbar li{
-
     width: 100px;
     text-align: center;
     position: relative;
