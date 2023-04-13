@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <link rel="stylesheet" href="navbar.css">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">    
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <title>Logout Page</title>
+
+            <style>
+                form {
+                margin: auto;
+                text-align: center;
+            }
+            </style>
+
+        </head>
+
+        <body style="font-family:Times New Roman, Times, serif;">
+            <div id = "main"  class = "container">
+                <ul id="navbar">
+                    <li class= "col-1"><a href="sc-fitness-home.html"><i class="fa fa-fw fa-home"></i></a>
+                    </li>
+                    
+                    <p class = "col-10" id="middle">SC Fitness</p>
+                    
+        
+                    <li class = "col-1" id = "right"><a href=""><i class="fa fa-fw fa-bars"></i></a>
+                        <ul>
+                            <li ><a href="full-schedule.html">Schedule</a></li>
+                            <li ><a href="logout-confirmation.html">Logout</a></li>
+                        </ul>
+                        
+
+                    </li>
+                </ul>
+                <div class="form">
+                    
+                    
+                    <form>
+                    <h3>What body part do you want to focus on?</h3>
+                    <select id="bodypart" name="bodypart">
+                        <option value="N/A">N/A</option>
+                        <option value="arms">Arms</option>
+                        <option value="legs">Legs</option>
+                        <option value="abs">Abs</option>
+                        <option value="upper-body">Upper Body</option>
+                        <option value="lower-body">Lower Body</option>
+                        <option value="all-body">All body</option>
+
+
+                    </select>
+                    
+                    <br><br>
+                    <input type="button" value="Next" onclick="window.location.href='goals3.html'">
+                    </form>
+        
+                </div> <!-- .row -->
+            </div>
+  
+            
+        </body>
+    </html>
+
+</html>
