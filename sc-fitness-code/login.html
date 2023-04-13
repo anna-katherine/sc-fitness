@@ -7,12 +7,44 @@
 	<title>Login page</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <style>
-
-    
+		body{
+			font-family: Roboto;
+		}
+		img {
+			width: 100%; 
+		}
+		#image {
+			padding-left: 5%; 
+			padding-top: 7%; 
+		}
+		#general{
+			padding-right: 7%; 
+			padding-top: 10%; 
+			padding-left: 4%; 
+		}
+		.green{
+			background-color: #04c35c;
+			color: white; 
+			width: 100%; 
+		}
+		.green:hover{
+			background-color: grey;
+			color: white; 
+		}
+		#no-account{
+			text-align: center;
+			justify-content: center;
+			padding-top: 27%; 
+		}
+		.center{
+			text-align: right;
+			justify-content: right;
+		}
     </style>
 </head>
-<body style="font-family:Times New Roman, Times, serif;">
+<body>
     <ul id="navbar">
         <li class= "col-1"><a href="sc-fitness-home.html"><i class="fa fa-fw fa-home"></i></a>
         </li>
@@ -29,59 +61,72 @@
 
         </li>
     </ul>
-	<div class="container mt-4">
-        
-		<div class="row">
-			<h1 class="col-12 mt-4 mb-4">Login</h1>
-		</div> <!-- .row -->
-	</div> <!-- .container -->
 
-	<div class="container">
+	<div class="row">
+		<div class="col-7" id="image">
+			<img src="img/login_img.png">
+		</div>
+		<div class="col-5" id="general">
+			<p>Welcome back</p>
+			<h3><b>Login to Your Account</b></h3>
+			<div>
+				<form action="login.php" method="POST">
 
-		<form action="login.php" method="POST">
+					<div class="row mb-3">
+						<div class="font-italic text-danger col-sm-9 ml-sm-auto">
+							<!-- Show errors here. -->
+						</div>
+					</div> <!-- .row -->
+					
+		
+					<div class="form-group ">
+						<label for="username-id" class="col-form-label">Username</label>
+						<div>
+							<input type="text" class="form-control" id="username-id" name="username">
+						</div>
+					</div> <!-- .form-group -->
+		
+					<div class="form-group">
+						<label for="password-id" class="col-form-label">Password</label>
+						<div>
+							<input type="password" class="form-control" id="password-id" name="password">
+						</div>
+					</div> <!-- .form-group -->
+		
+					<div class="form-group row">
+						<div class="col-sm-12 mt-2">
+							<button type="submit" class="btn green">Login Now</button>
+						</div>
+					</div> <!-- .form-group -->
 
-			<div class="row mb-3">
-				<div class="font-italic text-danger col-sm-9 ml-sm-auto">
-					<!-- Show errors here. -->
-				</div>
-			</div> <!-- .row -->
-			
+					<div class="row">
+						<div class="col-6">
+							<input type="checkbox" id="remember" name="remember">
+							<label for="scales">Remember Me</label>
+						</div>
+						<div class="col-6 center">
+							<a href="register_form.php">Forgot Password?</a>
+						</div>
+					</div>
 
-			<div class="form-group row">
-				<label for="username-id" class="col-sm-3 col-form-label text-sm-right">Username:</label>
-				<div class="col-sm-9">
-					<input type="text" class="form-control" id="username-id" name="username">
-				</div>
-			</div> <!-- .form-group -->
-
-			<div class="form-group row">
-				<label for="password-id" class="col-sm-3 col-form-label text-sm-right">Password:</label>
-				<div class="col-sm-9">
-					<input type="password" class="form-control" id="password-id" name="password">
-				</div>
-			</div> <!-- .form-group -->
-
-			<div class="form-group row">
-				<div class="col-sm-3"></div>
-				<div class="col-sm-9 mt-2">
-					<button type="submit" class="btn btn-primary">Login</button>
-					<a href="<?php echo $_SERVER['HTTP_REFERER']; ?>" role="button" class="btn btn-light">Cancel</a>
-				</div>
-			</div> <!-- .form-group -->
-		</form>
-
-		<div class="row">
-			<div class="col-sm-9 ml-sm-auto">
-				<a href="register_form.php">Create an account</a>
-			</div>
-		</div> <!-- .row -->
-
-		<div class = "row">
-			<div class = "col-12">
-				<a href="sc-fitness-home.html" role="button" class="btn btn-light"><i class="fa fa-fw fa-home"></i>Main Page</a>
+				</form>
+		
+				<div class="row" id="no-account">
+					<div>
+						Don't have an account? <a href="register_form.php">Join free today</a>
+					</div>
+				</div> <!-- .row -->
+				<!--
+					<div class = "row">
+						<div class = "col-12">
+							<a href="sc-fitness-home.html" role="button" class="btn btn-light"><i class="fa fa-fw fa-home"></i>Main Page</a>
+						</div>
+					</div>
+				-->
 			</div>
 		</div>
+	</div>
 
-	</div> <!-- .container -->
+	
 </body>
 </html>
