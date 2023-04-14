@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
     <link rel="stylesheet" href="navbar.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login page</title>
+	<title>Goals 3</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
@@ -42,6 +42,24 @@
 			text-align: right;
 			justify-content: right;
 		}
+        .form-control-select {
+            background-color: #f2f2f2;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 10px;
+        }
+        
+        .form-control-select:focus {
+            background-color: #f2f2f2;
+            border-color: #04c35c;
+            outline: 0;
+            box-shadow: none;
+        }
+        
+        .form-control-select::-ms-expand {
+            display: none;
+        }
         
         
     </style>
@@ -80,14 +98,19 @@
 					
 		
 					<div class="form-group ">
-						<div>
-							<label for="current-weight">Current weight:</label>
-                            <input type="text" id="current-weight" name="current-weight"><br><br>
+                        <div>
+                            <label for="current-weight">Current weight:</label>
+                            <input type="text" id="current-weight" name="current-weight" class="form-control"><br><br>
                             <label for="ideal-weight">Ideal weight:</label>
-                            <input type="text" id="ideal-weight" name="ideal-weight"><br><br>        
-						</div>
-					</div> <!-- .form-group -->
-		
+                            <input type="text" id="ideal-weight" name="ideal-weight" class="form-control"><br><br>
+                            <label for="units">Units:</label>
+                            <select id="units" name="units" class="form-control">
+                                <option value="lbs">lbs</option>
+                                <option value="kg">kg</option>
+                            </select><br><br>
+                        </div>
+                    </div>
+                    
 					
 
 		
