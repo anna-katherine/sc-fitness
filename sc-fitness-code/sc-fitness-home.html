@@ -9,71 +9,20 @@
             <title>Home Page</title>
 
             <style>
-                .button {
-                    background-color: #04AA6D;
-                    border: none;
-                    color: white;
-                    padding: 20px;
-                    text-align: center;
-                    text-decoration: none;
-                    display: inline-block;
-                    font-size: 16px;
-                    margin: 4px 2px;
-                    }
-                    .button1 {border-radius: 2px;}
-                    .button2 {border-radius: 4px;}
-                    .button3 {border-radius: 8px;}
-                    .button4 {border-radius: 12px;}
-                    .button5 {border-radius: 50%;}
-
                 #schedule{
                     display: flex;
                     flex-wrap: wrap;
                     margin-top: 100px;
-                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                }
-                #goals{
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 250px;
-                    height: 250px;
-                    background-color: #D9D9D9;
-                    text-align: center;
-                    color: black;
-                }
-                #tomorrowgoals{
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 250px;
-                    height: 100px;
-                    background-color: #D9D9D9;
-                    text-align: center;
-                    color: black;
-                    font-size: 15px;
-                    margin: 0px auto;
-                }
-                #dayaftergoals{
-                    display: flex;
-                    flex-wrap: wrap;
-                    width: 250px;
-                    height: 80px;
-                    background-color: #2B534C;
-                    text-align: center;
-                    color: white;
-                    font-size: 15px;
-                    margin: 0px auto;
                 }
                 #today{
-                    text-align: left;
-                    background-color: #2B534C;
+                    text-align: center;
+                    background-color: #DFDFDF;
                     border:20px;
                     height: 300px;
                     width: 575px;
                     border-radius: 10px;
                     margin-left:20px;
                     margin-right:20px;
-                    color: white;
-
                     
                 }
                 #tommorow{
@@ -81,12 +30,11 @@
                     text-align: center;
                     border:20px;
                     border-radius: 10px;
-                    background-color: #FF6420;
+                    background-color: #DFDFDF;
                     height: 300px;
                     width: 300px;
                     margin-left:20px;
                     margin-right:20px;
-                    color: white;
                 }
                 #day-after{
 
@@ -94,11 +42,10 @@
                     background-color: #DFDFDF;
                     border-radius: 10px;
                     border:20px;
-                    height: 225px;
+                    height: 300px;
                     width: 300px;
                     margin-left:20px;
                     margin-right:20px;
-                    color: #2B534C;
                 }
                 #reference{
                     text-align: center;
@@ -110,7 +57,6 @@
                     margin-left:20px;
                     margin-right:20px;
                     margin-top: 40px;
-                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 }
             </style>
 
@@ -137,81 +83,20 @@
             <div class ="container" >
 
                 <div id = "schedule">
-                    <div id = "today" class = "row">
-                        <div class = "col-6">
-                            <h1><b><span id="datetime"></span><h1></b>
-                                <script>
-                                var dt = new Date();
-                                document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
-                                </script>
-                                <h2>Today's Workout:</h2>
-                                <p style="font-size:20px">Estimated Workout Time:</p>
-                        </div>
-                       
-                            <div id="goals" class = "col-4 mt-4" >
-                                <b><h1>Your Goals:</h1></b>
-                                <ul>
-                                    <li>Jogging (30 minutes)</li>
-                                    <li>Stretching (5 minutes)</li>
-                                </ul>
-                            </div>
+                    <div id = "today">
+                        Hi
                     </div>
-                    <div id = "tommorow" class = "row">
-                            <h1><b><span id="p1"></span><h1></b>
-                            <script>
-                            var dat = new Date();
-                            var current_date = (dat.getMonth()+1)+"/"+ (dat.getDate()+1);
-                            document.getElementById("p1").innerHTML = current_date;
-                    </script>
-                        <p style = "font-size:30px">Tommorow:</p>
-                        <p style="font-size:25px">Lower Body</p>
-                        <div id="tomorrowgoals" class = "col-4 mt-4" >
-                            <ul>
-                                <li>Squats (10 reps, 3 sets)</li>
-                                <li>Deadlifts (10 reps, 3 sets)</li>
-                                <li>Hip Thrusts (10 reps, 3 sets)</li>
-                                <li>Lunges (10 reps, 3 sets)</li>
-                            </ul>
-                        </div>
+                    <div id = "tommorow">
+                        Hi tommorow
+    
                     </div>
                     <div id = "day-after">
-                        <h1><b><span id="p2"></span><h1></b>
-                            <script>
-                            var dat1 = new Date();
-                            var current_date = (dat1.getMonth()+1)+"/"+ (dat1.getDate()+2);
-                            document.getElementById("p2").innerHTML = current_date;
-                            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-                            if(dat1.getDay()+2==7){
-                                document.write("Monday");
-                            }else if(dat1.getDay()+2==8){
-                                document.write("Tuesday");
-                            }else{
-                                document.write(weekday[(dat1.getDay()+2)]+":");
-                            }
-                    </script>
-                    <p style="font-size:25px">Strength Training</p>
-                    <div id="dayaftergoals" class = "col-4 mt-2" >
-                        <ul>
-                            <li>Squats (10 reps, 3 sets)</li>
-                        </ul>
+                        Hi the day after
                     </div>
-                    <form action = "full-schedule.html">
-                        <button class="button button1">
-                            View Full Calendar>
-                        </button>
-                    </form>
-
-                    </div>
-                    
                 </div>
-                
 
                 <div id = "reference">
-                    <b><h1>References:</h1></b>
-                    <iframe width="420" height="200"
-                        src="https://www.youtube.com/embed/IT94xC35u6k">
-                       
-                    </iframe>
+                    references
                 </div>
             </div>
 
